@@ -1,0 +1,27 @@
+start: formula
+    | composite
+
+formula: "(" composite ")"
+        | unary
+
+unary: NEGATION "(" composite ")"
+        | proposition
+
+composite: proposition op proposition
+        | proposition op formula
+        | formula op proposition
+        | formula op formula
+
+op: DISJUNCTION | CONJUNCTION | IMPLICATION | EQUIVALENCE
+
+proposition: LETTER | NEGATION LETTER
+
+DISJUNCTION: "|"
+CONJUNCTION: "&"
+IMPLICATION: ">"
+EQUIVALENCE: "="
+NEGATION: "~"
+
+%import common.LETTER
+%import common.WS
+%ignore WS

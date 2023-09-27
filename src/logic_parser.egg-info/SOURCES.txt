@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/logic_parser/__init__.py
+src/logic_parser/cli.py
+src/logic_parser.egg-info/PKG-INFO
+src/logic_parser.egg-info/SOURCES.txt
+src/logic_parser.egg-info/dependency_links.txt
+src/logic_parser.egg-info/entry_points.txt
+src/logic_parser.egg-info/top_level.txt
+tests/test_parser.py

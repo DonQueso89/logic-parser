@@ -1,0 +1,17 @@
+[project]
+name = "logic_parser"
+version = "0.0.1"
+authors = [
+    {name="Kees van Ekeren", email="harry@nl.nl"}
+]
+description = "A package to parse and evaluate propositional logic formulas."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.scripts]
+logic-parser = "logic_parser.cli:main"
+
